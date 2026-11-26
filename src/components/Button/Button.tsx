@@ -1,13 +1,10 @@
 import './Button.css';
-import React from 'react';
 
 
-function Button(): React.JSX.Element {
-	const text = 'Искать';
-
+function Button({children}: {children: string}) {
 	return (
 		<button className="custom-button text-body-regular text-primary">
-			{ text }
+			{ children }
 		</button>
 	);
 }
